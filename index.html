@@ -224,6 +224,22 @@
     font-size: 0.7rem;
   }
 
+  .project-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(0,245,160,0.35);
+    padding-bottom: 0.2rem;
+    transition: all 0.2s ease;
+  }
+  .project-link:hover {
+    color: var(--accent2);
+    border-color: var(--accent2);
+  }
+
   /* Skills */
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
   .skill-group {
@@ -331,7 +347,7 @@
         <div class="stat-label">CGPA</div>
       </div>
       <div>
-        <div class="stat-num">3</div>
+        <div class="stat-num">5</div>
         <div class="stat-label">Projects</div>
       </div>
       <div>
@@ -400,6 +416,7 @@
         <li>BullMQ + Redis for asynchronous job processing and Socket.IO for real-time delivery with JWT authentication</li>
         <li>Deployed on Google Cloud Run with Cloud SQL (PostgreSQL) and containerized with Docker for horizontal scaling</li>
       </ul>
+      <a href="https://notification-service-710340448406.asia-south1.run.app/api-docs/" target="_blank" rel="noopener noreferrer" class="project-link">Test Swagger API ↗</a>
     </div>
 
     <div class="project-card">
@@ -413,6 +430,38 @@
         <li>Full ticket booking system in C++ — registration, seat selection, booking & payments</li>
         <li>All 5 SOLID principles across 15+ classes with Singleton, Factory & Strategy patterns</li>
         <li>Time-bound seat locking for concurrent conflict handling, modeled with UML class diagrams</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">04 —</div>
+      <div class="project-name">API Rate Limiter with Analytics</div>
+      <div class="project-tags">
+        <span class="tag">Node.js</span><span class="tag">Redis</span>
+        <span class="tag">Lua Scripts</span><span class="tag">Docker</span>
+        <span class="tag">Distributed Systems</span><span class="tag">Analytics</span>
+      </div>
+      <ul class="project-bullets">
+        <li>Distributed API rate limiting middleware supporting Token Bucket, Sliding Window, and Fixed Window Counter algorithms</li>
+        <li>Used Redis and atomic Lua scripts for race-condition-free rate limiting across multiple server instances</li>
+        <li>Built analytics for total requests, block rate, hourly breakdown, and top blocked IPs with standard rate-limit response headers</li>
+        <li>Implemented a fail-open design for Redis outages and Docker support for easy deployment of the complete stack</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">05 —</div>
+      <div class="project-name">Full-Stack Login & Registration Application</div>
+      <div class="project-tags">
+        <span class="tag">React.js</span><span class="tag">Node.js</span>
+        <span class="tag">Express.js</span><span class="tag">MongoDB</span>
+        <span class="tag">JWT</span><span class="tag">REST API</span>
+      </div>
+      <ul class="project-bullets">
+        <li>Built a full-stack authentication application with user registration, login, validation, and JWT-based authentication</li>
+        <li>Developed the frontend in React.js with reusable components for registration, login, and authenticated page access</li>
+        <li>Created Express.js routes and middleware for authentication, registration, login, and username content validation</li>
+        <li>Used MongoDB for persistent user storage and protected application access through token-based authentication</li>
       </ul>
     </div>
 
