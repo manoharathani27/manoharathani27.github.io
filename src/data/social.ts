@@ -11,7 +11,7 @@ export const PROFILE = {
   email: "athanimanohar27@gmail.com",
   phone: "+91-9353599181",
   github: "https://github.com/manoharathani27",
-  linkedin: "https://linkedin.com/in/manoharathani",
+  linkedin: "https://www.linkedin.com/in/manohar-athani-777a84262",
   portfolio: "https://manoharathani27.github.io",
   leetcode: "https://leetcode.com/manohar27athani",
   swagger: "https://notification-service-710340448406.asia-south1.run.app/api-docs/",
